@@ -112,6 +112,10 @@ function gameEngine() {
 }
 // main logic starts here
 window.requestAnimationFrame(main);
+document.addEventListener('swiped-left',e=>{
+    console.log("swiped");
+    console.warn("swiped");
+})
 window.addEventListener('keydown', e => {
     inputDir = { x: 0, y: 1 };
     movesound.play();
